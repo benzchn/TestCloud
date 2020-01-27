@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  displayName: 'php test.php'
+  displayName: ''
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
@@ -21,4 +21,4 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'test.php' 
+    artifactName: 'test' 
